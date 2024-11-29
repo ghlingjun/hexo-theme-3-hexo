@@ -1,40 +1,40 @@
 version: 1.1.0
 # 你的头像url
-avatar: /img/avatar.jpg
-favicon: /img/avatar.jpg
+avatar: /img/malu.png
+favicon: /img/favicon.ico
 
 #如果博客放置位置不是根目录，则可以通过配置此路径解决静态文件路径错误问题
 # 比如访问地址为 yelog.org/blog 那就需要配置为 blog_path: /blog 才能正常访问
-blog_path: /
+#blog_path: /
 
 #链接图标 显示顺序和下面顺序一致
 link:
   theme: color # 链接样式，color: 彩色图标  white: 黑白图标
   items:
     rss: /atom.xml
-    github: https://github.com/yelog
-    facebook: https://www.facebook.com/faker.tops
-    twitter:
-    linkedin:
-    instagram: https://www.facebook.com/faker.tops
-    reddit: https://www.reddit.com/user/yelog/
-    weibo: http://weibo.com/u/2307534817
-    jianshu: https://www.jianshu.com/u/ff56736de7cf
-    zhihu: https://www.zhihu.com/people/jaytp/activities
-    csdn:
-    oschina: https://my.oschina.net/yelog
-    juejin:
-    email: jaytp@qq.com
-    qq: 872336115
-    kugou: https://www.kugou.com/
-    neteasemusic: https://music.163.com/#/user/home?id=88151013
+    github: https://github.com/ghlingjun
+    #    facebook: https://www.facebook.com/faker.tops
+    #    twitter:
+    #    linkedin:
+    #    instagram: https://www.facebook.com/faker.tops
+    #    reddit: https://www.reddit.com/user/yelog/
+    #    weibo: http://weibo.com/u/2307534817
+    #    jianshu: https://www.jianshu.com/u/ff56736de7cf
+    #    zhihu: https://www.zhihu.com/people/jaytp/activities
+    #    csdn:
+    #    oschina: https://my.oschina.net/yelog
+    #    juejin:
+    email: ethan89@aliyun.com
+#    qq: 304686125
+#    kugou: https://www.kugou.com/
+#    neteasemusic: https://music.163.com/#/user/home?id=88151013
 
 ##########多作者模式############
 author:
   on: false
   authors:
-    author1: 阁主
-    author2: 小马哥
+    author1: Ethan
+    author2: 羽青
 ##############################
 
 # 文章分类设置
@@ -42,10 +42,10 @@ category:
   num: true # 分类显示文章数
   sub: true # 开启多级分类
   sort:
+    - blog
     - 读书
     - 工具
-    - 大前端
-    - 后端
+    - 开发
     - 数据库
     - 运维
   width:
@@ -70,23 +70,23 @@ menu:
   friend: # '友链' 按钮
     on: true # 是否展示
   menus: # 添加的其他菜单写在 menus 下，如下三个菜单：动态菜单1、动态菜单2、动态菜单3
-    相册:
-      on: false
-      url: /photo
-      type: 1  # 跳转类型 1：站内异步跳转
-    叶落阁:
-      on: false
-      url: http://yelog.org/
-      type: 2  # 跳转类型 2：当前页面跳转
-    github:
-      on: false
-      url: https://github.com/yelog
-      type: 3  # 跳转类型 3：打开新的tab页
+    #    相册:
+    #      on: false
+    #      url: /photo
+    #      type: 1  # 跳转类型 1：站内异步跳转
+    #    叶落阁:
+    #      on: false
+    #      url: http://yelog.org/
+    #      type: 2  # 跳转类型 2：当前页面跳转
+#    github:
+#      on: true
+#      url: https://github.com/ghlingjun
+#      type: 3  # 跳转类型 3：打开新的tab页
 
 # 文末声明
-article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com
+article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 ethan89@aliyun.com
 
-bottom_text: ©2016-2020 Yelog
+bottom_text: ©2016-2024 Ethan
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
 
@@ -113,7 +113,7 @@ searchAll: false
 copyright: false
 # Copyright info. of post | 文末版权信息
 
-word_count: false
+word_count: true
 # true 开启字数统计
 # 开启此功能需要安装插件 ：在 hexo根目录 执行npm i hexo-wordcount --save
 
@@ -224,7 +224,10 @@ mermaid:
 
 # 友情链接
 friends:
-  叶落阁: http://yelog.org/
+  羽青: https://www.jianshu.com/u/210052204bc2
+  V2EX: https://www.v2ex.com/?r=lingshang
+  叶落阁: https://yelog.org/
+  通义灵码: https://developer.aliyun.com/topic/lingma/activities/202405?taskCode=16245&recordId=82c61e888b48ebdf2a7ea92a97c50a8d#/?utm_content=m_fission_1
 
 ##########评论设置#############
 comment:
@@ -239,13 +242,12 @@ disqus:
   # disqus评论系统， 2016年9月被GFW认证，大陆不能使用。
   # 获取shortname：https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
 
-
 gitalk:
-  githubID: yelog
-  repo: yelog.github.io
-  ClientID:
-  ClientSecret:
-  adminUser: yelog
+  githubID: ghlingjun
+  repo: ghlingjun.github.io
+  ClientID: c65c4fd21883249f3016
+  ClientSecret: 8e99752832aebc4e0e5197c85e586eaa27123063
+  adminUser: ghlingjun
   distractionFreeMode: true
   language: zh-CN
   perPage: 10
@@ -260,12 +262,11 @@ gitalk:
 # language: 语言：支持：en / zh-CN / zh-TW 三种
 # perPage: 每次加载的数据大小，默认10，最大100
 
-
 gitment:
-  owner: yelog
-  repo: yelog.github.io
-  client_id:
-  client_secret:
+  owner: ghlingjun
+  repo: ghlingjun.github.io
+  client_id: c65c4fd21883249f3016
+  client_secret: 8e99752832aebc4e0e5197c85e586eaa27123063
   # gitment : 通过github issue实现的评论系统
   # 开源地址 : https://github.com/imsun/gitment
   # 使用说明 :
